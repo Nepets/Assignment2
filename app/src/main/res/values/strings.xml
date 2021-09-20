@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">SignUpForm</string>
+    <string name="hintName">Enter a name</string>
+    <string name="hintEmail">Enter an Email Address</string>
+    <string name="hintPassword">Enter a Password</string>
+    <string name="hintPasswordConfirm">re-enter your password</string>
+    <string name="save">Save</string>
 </resources>
