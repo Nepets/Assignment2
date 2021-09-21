@@ -9,4 +9,6 @@
     <string name="emailError">No email detected</string>
     <string name="passwordError">No password detected</string>
     <string name="passwordConfirmError">No password confirm detected</string>
+    <string name="passwordMatch">Passwords do not match</string>
+
 </resources>

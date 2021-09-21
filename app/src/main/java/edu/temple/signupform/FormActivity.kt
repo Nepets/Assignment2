@@ -32,12 +32,18 @@ class FormActivity : AppCompatActivity() {
             //Toast.makeText(this@FormActivity,"No password detect", Toast.LENGTH_SHORT).show()
             txtPasswordView.error=getString(R.string.passwordError)
         }
-        if(txtPasswordConfirmView.text.isBlank()) {
+        else if(txtPasswordConfirmView.text.isBlank()) {
             //Toast.makeText(this@FormActivity, "No password re-enter", Toast.LENGTH_SHORT).show()
             txtPasswordConfirmView.error=getString(R.string.passwordConfirmError)
         }
-        if(!(txtPasswordView.text.toString().equals(txtPasswordConfirmView.text.toString()))){
-            Toast.makeText(this@FormActivity,"Password is not the same", Toast.LENGTH_SHORT).show()
+        else if(!(txtPasswordView.text.toString().equals(txtPasswordConfirmView.text.toString()))){
+            //Toast.makeText(this@FormActivity,"Password is not the same", Toast.LENGTH_SHORT).show()
+            txtPasswordConfirmView.error=getString(R.string.passwordMatch)
+            txtPasswordView.error=getString(R.string.passwordMatch)
+        }
+        if(txtNameView.text.isNotBlank() && txtEmailView.text.isNotBlank() && txtPasswordView.text.isNotBlank() && txtPasswordConfirmView.text.isNotBlank())
+        {
+            Toast.makeText(this@FormActivity,"Weclome User: "+txtNameView.text, Toast.LENGTH_LONG).show()
         }
 
     }
