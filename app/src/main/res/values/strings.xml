@@ -5,4 +5,8 @@
     <string name="hintPassword">Enter a Password</string>
     <string name="hintPasswordConfirm">re-enter your password</string>
     <string name="save">Save</string>
+    <string name="nameError">No name detected</string>
+    <string name="emailError">No email detected</string>
+    <string name="passwordError">No password detected</string>
+    <string name="passwordConfirmError">No password confirm detected</string>
 </resources>
