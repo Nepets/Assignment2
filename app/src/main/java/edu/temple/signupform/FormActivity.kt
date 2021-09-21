@@ -41,7 +41,7 @@ class FormActivity : AppCompatActivity() {
             txtPasswordConfirmView.error=getString(R.string.passwordMatch)
             txtPasswordView.error=getString(R.string.passwordMatch)
         }
-        if(txtNameView.text.isNotBlank() && txtEmailView.text.isNotBlank() && txtPasswordView.text.isNotBlank() && txtPasswordConfirmView.text.isNotBlank())
+        else if(txtNameView.text.isNotBlank() && txtEmailView.text.isNotBlank() && txtPasswordView.text.isNotBlank() && txtPasswordConfirmView.text.isNotBlank())
         {
             Toast.makeText(this@FormActivity,"Weclome User: "+txtNameView.text, Toast.LENGTH_LONG).show()
         }
